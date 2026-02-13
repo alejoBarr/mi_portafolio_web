@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
       imageUrl: 'assets/images/proyecto3.png',
       projectUrl: 'https://github.com/alejoBarr/MemoryGO',
       googlePlayUrl:
-          'https://play.google.com/store/apps/details?id=com.alejandro.memorygo',
+          'https://play.google.com/store/apps/details?id=com.alejandro.memogo',
     ),
   ];
 
