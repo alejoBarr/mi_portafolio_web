@@ -26,8 +26,11 @@ class ContactSection extends StatelessWidget {
               final Uri emailLaunchUri = Uri(
                 scheme: 'mailto',
                 path: 'jbarrios501@gmail.com',
-                query:
-                    'subject=Contacto desde tu Portafolio Web&body=Hola Alejandro, he visto tu portafolio y me gustaría contactarte.',
+                queryParameters: {
+                  'subject': 'Contacto desde tu Portafolio Web',
+                  'body':
+                      'Hola Alejandro, he visto tu portafolio y me gustaría contactarte.',
+                },
               );
               _launchUrl(emailLaunchUri.toString());
             },
@@ -60,7 +63,7 @@ class ContactSection extends StatelessWidget {
           IconButton(
             icon: const FaIcon(FontAwesomeIcons.whatsapp, size: 22),
             onPressed: () => _launchUrl(
-              'https://wa.me/5439795002677',
+              'https://wa.me/543795002677',
             ), // Reemplaza con tu número ej: https://wa.me/5491112345678
             tooltip: 'WhatsApp',
           ),
