@@ -31,6 +31,15 @@ class HomePage extends StatelessWidget {
       googlePlayUrl:
           'https://play.google.com/store/apps/details?id=com.alejandro.gompong', // URL de ejemplo
     ),
+    Project(
+      title: 'MemoryGO',
+      description:
+          'Un juego de memoria clásico para ejercitar tu mente. ¡Encuentra los pares y supera tus récords!',
+      imageUrl: 'assets/images/proyecto3.png',
+      projectUrl: 'https://github.com/alejoBarr/MemoryGO',
+      googlePlayUrl:
+          'https://play.google.com/store/apps/details?id=com.alejandro.memorygo',
+    ),
   ];
 
   @override
