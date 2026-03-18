@@ -12,6 +12,13 @@ class HomePage extends StatelessWidget {
 
   final List<Project> projects = [
     Project(
+      title: 'Estudio Jurídico Web',
+      description:
+          'Sitio web institucional desarrollado para una firma legal. Cuenta con diseño responsive, presentación de abogados, áreas de práctica y formulario de contacto directo.',
+      imageUrl: 'assets/images/icono-estudio-juridico.png',
+      projectUrl: 'https://estudio-juridico-web-d9625.web.app',
+    ),
+    Project(
       title: 'MyChat IA',
       description:
           'MyChat IA es una innovadora aplicación de chat que utiliza inteligencia artificial para responder a tus preguntas y mantener conversaciones naturales.',
