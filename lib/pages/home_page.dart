@@ -34,12 +34,11 @@ class HomePage extends StatelessWidget {
     Project(
       title: 'MemoryGO',
       description:
-          '¡Desafía tu mente! Un adictivo juego de memoria con niveles y desafíos.',
+          'Un juego de memoria clásico para ejercitar tu mente. ¡Encuentra los pares y supera tus récords!',
       imageUrl: 'assets/images/proyecto3.png',
-      projectUrl:
-          'https://github.com/alejoBarr/MemoGo_Game', // Reemplaza si es otra URL
+      projectUrl: 'https://github.com/alejoBarr/MemoryGO',
       googlePlayUrl:
-          'https://play.google.com/store/apps/details?id=com.alejandro.memogo', // URL de ejemplo
+          'https://play.google.com/store/apps/details?id=com.alejandro.memogo',
     ),
   ];
 
@@ -84,6 +83,46 @@ class HomePage extends StatelessWidget {
                       children: projects
                           .map((project) => ProjectCard(project: project))
                           .toList(),
+                    ),
+                    const SizedBox(height: 50),
+                    // Sección de "Próximamente"
+                    Container(
+                      padding: const EdgeInsets.all(30),
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
+                      constraints: const BoxConstraints(maxWidth: 700),
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey[50],
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(color: Colors.blueGrey[200]!),
+                      ),
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.construction,
+                            size: 40,
+                            color: Colors.blueGrey[700],
+                          ),
+                          const SizedBox(height: 15),
+                          Text(
+                            'Más proyectos en camino',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blueGrey[800],
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            'Actualmente estoy trabajando en nuevas aplicaciones y soluciones web. ¡Pronto estarán disponibles aquí!',
+                            style: GoogleFonts.roboto(
+                              fontSize: 16,
+                              color: Colors.blueGrey[600],
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(height: 60),
                     // Nuevo pie de página

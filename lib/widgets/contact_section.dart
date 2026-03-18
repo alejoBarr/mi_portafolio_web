@@ -23,11 +23,14 @@ class ContactSection extends StatelessWidget {
           IconButton(
             icon: const FaIcon(FontAwesomeIcons.solidEnvelope, size: 22),
             onPressed: () {
-              final Uri emailLaunchUri = Uri(
-                scheme: 'mailto',
-                path: 'jbarrios501@gmail.com',
-                query:
-                    'subject=Contacto desde tu Portafolio Web&body=Hola Alejandro, he visto tu portafolio y me gustaría contactarte.',
+              final String subject = Uri.encodeComponent(
+                'Contacto desde tu Portafolio Web',
+              );
+              final String body = Uri.encodeComponent(
+                'Hola Alejandro, he visto tu portafolio y me gustaría contactarte.',
+              );
+              final Uri emailLaunchUri = Uri.parse(
+                'mailto:jbarrios501@gmail.com?subject=$subject&body=$body',
               );
               _launchUrl(emailLaunchUri.toString());
             },
@@ -60,7 +63,7 @@ class ContactSection extends StatelessWidget {
           IconButton(
             icon: const FaIcon(FontAwesomeIcons.whatsapp, size: 22),
             onPressed: () => _launchUrl(
-              'https://wa.me/5439795002677',
+              'https://wa.me/543795002677',
             ), // Reemplaza con tu número ej: https://wa.me/5491112345678
             tooltip: 'WhatsApp',
           ),
