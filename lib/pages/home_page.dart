@@ -12,6 +12,13 @@ class HomePage extends StatelessWidget {
 
   final List<Project> projects = [
     Project(
+      title: 'Chispas de Cuentos',
+      description:
+          'Plataforma web interactiva para explorar y leer cuentos. Un espacio digital diseñado para fomentar la imaginación y compartir historias mágicas.',
+      imageUrl: 'assets/images/chispas_cuentos.png',
+      projectUrl: 'https://chispasdecuentos.web.app',
+    ),
+    Project(
       title: 'Estudio Jurídico Web',
       description:
           'Sitio web institucional desarrollado para una firma legal. Cuenta con diseño responsive, presentación de abogados, áreas de práctica y formulario de contacto directo.',
