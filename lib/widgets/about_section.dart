@@ -275,7 +275,7 @@ class AboutSection extends StatelessWidget {
     );
   }
 
-  Widget _buildTechIcon(IconData icon, String tooltip) {
+  Widget _buildTechIcon(dynamic icon, String tooltip) {
     return Tooltip(
       message: tooltip,
       waitDuration: const Duration(milliseconds: 300),
