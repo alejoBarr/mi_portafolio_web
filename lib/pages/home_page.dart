@@ -12,6 +12,13 @@ class HomePage extends StatelessWidget {
 
   final List<Project> projects = [
     Project(
+      title: 'VentaGo',
+      description:
+          'Plataforma web ágil y eficiente para la gestión y optimización de ventas.',
+      imageUrl: 'assets/images/ventago.png',
+      projectUrl: 'https://ventago.app.web.app',
+    ),
+    Project(
       title: 'Chispas de Cuentos',
       description:
           'Plataforma web interactiva para explorar y leer cuentos. Un espacio digital diseñado para fomentar la imaginación y compartir historias mágicas.',

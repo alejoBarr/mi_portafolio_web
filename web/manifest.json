@@ -1,11 +1,11 @@
 {
-    "name": "mi_portafolio_web",
-    "short_name": "mi_portafolio_web",
+    "name": "</JAB> Portafolio",
+    "short_name": "</JAB>",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Portafolio profesional de desarrollo de software </JAB>.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
