@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     Project(
       title: 'VentaGo',
       description:
-          'Plataforma web ágil y eficiente para la gestión y optimización de ventas.',
+          'Aplicación móvil ágil y eficiente para la gestión y optimización de ventas.',
       imageUrl: 'assets/images/ventago.png',
       projectUrl: 'https://ventago.app.web.app',
     ),
