@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
       description:
           'Aplicación móvil ágil y eficiente para la gestión y optimización de ventas.',
       imageUrl: 'assets/images/ventago.png',
-      projectUrl: 'https://ventago.app.web.app',
+      projectUrl: 'https://ventago-app.web.app',
     ),
     Project(
       title: 'Chispas de Cuentos',
