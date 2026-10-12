@@ -72,27 +72,38 @@ class _ProjectCardState extends State<ProjectCard> {
                   const SizedBox(height: 15),
                   Align(
                     alignment: Alignment.centerRight,
-                    child: (widget.project.googlePlayUrl != null)
-                        ? ElevatedButton.icon(
-                            onPressed: () =>
-                                _launchUrl(widget.project.googlePlayUrl!),
-                            icon: const Icon(Icons.shop_2_outlined, size: 18),
-                            label: const Text('Ver en Play Store'),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(
-                                0xFF01875f,
-                              ), // Color de Google Play
-                              foregroundColor: Colors.white,
-                            ),
-                          )
-                        : ElevatedButton(
+                    child: Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      alignment: WrapAlignment.end,
+                      children: [
+                        if (widget.project.projectUrl.isNotEmpty)
+                          ElevatedButton(
                             onPressed: () =>
                                 _launchUrl(widget.project.projectUrl),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.blueGrey[800],
+                              foregroundColor: Colors.white,
                             ),
-                            child: const Text('Ver Proyecto'),
+                            child: Text(
+                              widget.project.projectUrl.contains('github.com')
+                                  ? 'GitHub'
+                                  : 'Ver Web',
+                            ),
                           ),
+                        if (widget.project.googlePlayUrl != null)
+                          ElevatedButton.icon(
+                            onPressed: () =>
+                                _launchUrl(widget.project.googlePlayUrl!),
+                            icon: const Icon(Icons.shop_2_outlined, size: 18),
+                            label: const Text('Play Store'),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF01875f),
+                              foregroundColor: Colors.white,
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
                 ],
               ),
