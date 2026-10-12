@@ -39,10 +39,9 @@ class HomePage extends StatelessWidget {
       description:
           'MyChat IA es una innovadora aplicación de chat que utiliza inteligencia artificial para responder a tus preguntas y mantener conversaciones naturales.',
       imageUrl: 'assets/images/proyecto1.png',
-      projectUrl:
-          'https://github.com/alejoBarr/my_chat_ia_app', // Reemplaza si es otra URL
+      projectUrl: 'https://github.com/alejoBarr/MyChat-IA',
       googlePlayUrl:
-          'https://play.google.com/store/apps/details?id=com.alejandro.mychat3', // URL de ejemplo
+          'https://play.google.com/store/apps/details?id=com.alejandro.mychat3',
     ),
     Project(
       title: 'Gompong',
